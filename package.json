@@ -3,5 +3,13 @@
   "version": "1.0.0",
   "main": "index.js",
   "author": "Pavlos Vinieratos <pvinis@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "execa": "^1.0.0",
+    "ramda": "^0.26.1",
+    "rxjs": "^6.4.0"
+  },
+  "devDependencies": {
+    "jest": "^24.7.1"
+  }
 }
