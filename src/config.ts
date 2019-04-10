@@ -1,8 +1,17 @@
-const execa = require('execa')
-const R = require('ramda')
+import execa from 'execa'
+import R from 'ramda'
 
 
-const config = {
+
+type Config<FetchOutput, MapOutput> = {
+    interval: number,
+    fetch: () => Promise<FetchOutput>,
+    map: (input: FetchOutput) => MapOutput,
+    compare: (previous: MapOutput, next: MapOutput) => boolean,
+}
+ 
+
+const config: Config<string, string[]> = {
     /// interval that we will check things (in ms)
     interval: 2000,
     
@@ -16,13 +25,15 @@ const config = {
     map: input => {
         let versions = input.split('\n')
         versions = versions.slice(versions.length - 11)
-        versions = R.map(version => {
+        versions = R.map((version: string) => {
             const parts = version.split('\'')
             return parts[1]
         })(versions)
         versions.pop() // extra new line
         return versions
     },
+
+    compare: (previous, next) => false,
 }
 
-module.exports = config
+export default config
