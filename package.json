@@ -10,7 +10,7 @@
     "build:live": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts"
   },
   "dependencies": {
-    "execa": "^1.0.0",
+    "execa": "^4.0.0",
     "ramda": "^0.26.1",
     "rxjs": "^6.4.0"
   },
