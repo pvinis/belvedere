@@ -380,12 +380,12 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-11.15.3.tgz#cb7f19846a83ac5a88fc22756b74633cdeb476a7"
   integrity sha512-5RzvXVietaB8S4dwDjxjltAOHtTO87fiksjqjWGZih97j6KSrdCDaRfmYMNrgrLM87odGBrsTHAl6N3fLraQaw==
 
-"@types/ramda@0.26.36":
-  version "0.26.36"
-  resolved "https://registry.yarnpkg.com/@types/ramda/-/ramda-0.26.36.tgz#094f495c04f8876f583597ae73dce7eac94fc6ba"
-  integrity sha512-uo22Nf32Cc3EURp9tYlFttY8MVQZ1zoVum+D+yQ2jm4IqQFxDtwCQlP/WMwbuj4ey5kw1rJ7v6OacDszfWiqLA==
+"@types/ramda@0.29.11":
+  version "0.29.11"
+  resolved "https://registry.yarnpkg.com/@types/ramda/-/ramda-0.29.11.tgz#86d4ff34320862535fbcef54c9f33d14bdb12951"
+  integrity sha512-jm1+PmNOpE7aPS+mMcuB4a72VkCXUJqPSaQRu2YqR8MbsFfaowYXgKxc7bluYdDpRHNXT5Z+xu+Lgr3/ml6wSA==
   dependencies:
-    ts-toolbelt "^4.10.7"
+    types-ramda "^0.29.9"
 
 "@types/stack-utils@^1.0.1":
   version "1.0.1"
@@ -3083,10 +3083,10 @@ qs@~6.5.2:
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.5.2.tgz#cb3ae806e8740444584ef154ce8ee98d403f3e36"
   integrity sha512-N5ZAX4/LxJmF+7wN74pUD6qAh9/wnvdQcjq9TZjevvXzSUo7bfmw91saqMjzGS2xq91/odN2dW/WOl7qQHNDGA==
 
-ramda@^0.26.1:
-  version "0.26.1"
-  resolved "https://registry.yarnpkg.com/ramda/-/ramda-0.26.1.tgz#8d41351eb8111c55353617fc3bbffad8e4d35d06"
-  integrity sha512-hLWjpy7EnsDBb0p+Z3B7rPi3GDeRG5ZtiI33kJhTt+ORCd38AbAIjB/9zRIUoeTbE/AVX5ZkU7m6bznsvrf8eQ==
+ramda@^0.29.0:
+  version "0.29.1"
+  resolved "https://registry.yarnpkg.com/ramda/-/ramda-0.29.1.tgz#408a6165b9555b7ba2fc62555804b6c5a2eca196"
+  integrity sha512-OfxIeWzd4xdUNxlWhgFazxsA/nl3mS4/jGZI5n00uWOoSSFRhC1b6gl6xvmzUamgmqELraWp0J/qqVlXYPDPyA==
 
 rc@^1.0.1, rc@^1.1.6, rc@^1.2.7:
   version "1.2.8"
@@ -3760,10 +3760,10 @@ ts-node@8.5.4:
     source-map-support "^0.5.6"
     yn "^3.0.0"
 
-ts-toolbelt@^4.10.7:
-  version "4.10.7"
-  resolved "https://registry.yarnpkg.com/ts-toolbelt/-/ts-toolbelt-4.10.7.tgz#3d076afb0e99209cbde458960b253091040c6808"
-  integrity sha512-4YDe0TWABZ4i8am1Bup0dwGii7c1rffZ7MXE7q4kmG+ixeiKUAnaaO75iBrw04v6vJg/VookQ0yOdDD0DEQhHA==
+ts-toolbelt@^9.6.0:
+  version "9.6.0"
+  resolved "https://registry.yarnpkg.com/ts-toolbelt/-/ts-toolbelt-9.6.0.tgz#50a25426cfed500d4a09bd1b3afb6f28879edfd5"
+  integrity sha512-nsZd8ZeNUzukXPlJmTBwUAuABDe/9qtVDelJeT/qW0ow3ZS3BsQJtNkan1802aM9Uf68/Y8ljw86Hu0h5IUW3w==
 
 tslib@^1.9.0:
   version "1.9.3"
@@ -3788,6 +3788,13 @@ type-check@~0.3.2:
   integrity sha1-WITKtRLPHTVeP7eE8wgEsrUg23I=
   dependencies:
     prelude-ls "~1.1.2"
+
+types-ramda@^0.29.9:
+  version "0.29.9"
+  resolved "https://registry.yarnpkg.com/types-ramda/-/types-ramda-0.29.9.tgz#b1995d99421a3519cab9e800c6db3c0921816a8e"
+  integrity sha512-B+VbLtW68J4ncG/rccKaYDhlirKlVH/Izh2JZUfaPJv+3Tl2jbbgYsB1pvole1vXKSgaPlAe/wgEdOnMdAu52A==
+  dependencies:
+    ts-toolbelt "^9.6.0"
 
 typescript@3.7.3:
   version "3.7.3"
